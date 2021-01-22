@@ -1,0 +1,14 @@
+language: java
+sudo: required
+addons:
+  sonarcloud:
+    organization: akash-mittal-github
+jdk:
+- oraclejdk8
+script: mvn clean install sonar:sonar
+cache:
+  directories:
+  - "$HOME/.sonar/cache"
+env:
+  global:
+  - secure: 1fdrRguACGv7JwR0FEiErKf6JgoZK2WZHVCzDxQ7A50ybYQO1KjOqoAMQ13AOHGLrcwp3fAjH/9WqTVZDE0sdorbujt9bsUKX5eDP7k20e5ULoU36eniVN03n7wa1+6Q7p68uqcl6hQC4Wdi2rgykzPFCFDMBnD/bnfjSwoX9lzeM2AAJK6UQ2GIh1x8NydkBcNTPCWUFxlRjRpxgNhiwJutEojWNxUnNKvZ2RmWi99msQ7ZDw/NxGkKpFQqUUXVz17gdc939HUg3CvLD19B/jNNuNh8VxB2ZXc6kjRSQWQJA0CcbESFXp2RHatVTYlcyA1rIG+y5AL9W5KnsxU9KupfI5Kn4J8EvsxBGGR/LS/Z5cjjDgqvBQQQP06W8c68mMGVpkzx0+GqqRPgXLGljQLmDBpDT+LYipThme5oT8y5YXAZan60dIcfx8jsr1/rLTsKsXMdR8lkzCvKnoa5L/7/bCCeaJywFa/mUDOxCk+t2+IPrU4CTbwC5PkJzm3uExdTGW0Ox4U54fQz/RJ60zNMM2loz9iyLqLPKiUjZKwYIiXAhugK0H4qRUSw58B5XWFKV1J29lSzOEWX8/2IIYg5M0Oo5LwqXvc2/Ec7Nbpv5RrW3v8Ab+X9f8udE0Ts+ocB5tCe1x5B/HjTYS7TS1Y0XfHTCMRWesxie8X1Oz0=

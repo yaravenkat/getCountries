@@ -1,0 +1,1 @@
+mvn clean install sonar:sonar -Dsonar.projectKey=Akash-Mittal_northern-countries -Dsonar.organization=akash-mittal-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=906b8c18702fcec299cab5a9fa0df102f6bd0219
